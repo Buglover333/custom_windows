@@ -34,7 +34,7 @@ The "custom_windows" module provides a convenient way to implement basic UI func
                                 ~ Alt + . ---------- fast scroll right
                                 ~ Alt + v ---------- paste from the clipboard
  **example:**
-   Here's an example of editor() function. If script returns error, making the window smaller might help. If it crushes while scrolling, that's the keystroke buffering, use Alt key combinations to scroll the text, moving between the lines should still work fine.
+   Here's an example of editor() function. If script returns an error, making the window smaller might help. If it crushes while scrolling, that's the keystroke buffering, use Alt key combinations to scroll the text, moving between the lines should still work fine.
 
     import custom_windows as cw
     text = cw.editor(10, 50, 10, 10, None, True, 'type something, than press Alt + s to save', True, True, 3, 3, 0, 2, 4)
@@ -42,7 +42,7 @@ The "custom_windows" module provides a convenient way to implement basic UI func
 ## text()
 
  **usage:**
-   This function displays a simple scrollable text window, which can be closed by typing 'q'. The function accepts arguments in the following order:
+   Displays a simple scrollable text window, which can be closed by typing 'q'. The function accepts arguments in the following order:
 
                                1) winy ------------- width of the editor window
                                2) winx ------------- height of the editor window
