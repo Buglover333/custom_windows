@@ -6,20 +6,20 @@ The "custom_windows" module provides a convenient way to implement basic UI func
  **usage:**
  The editor() function creates an easily customizable text editor window. It accepts arguments in the following order:
 
-                               1) winy ------------- width of the editor window
-                               2) winx ------------- height of the editor window
-                               3) ygap ------------- gap between the top of the editor window and the screen border
-                               4) xgap ------------- gap between the right side of the editor window and the screen border
-                               5) filename --------- has the value of "None" by default
-                               6) add_header ------- "False" by default, Pass "True" to add a window header
-                               7) header_text ------ messenge to be displayed in the header
-                               8) add_numbers ------ adds numeration, "False" by default
-                               9) add_shaddow ------ adds shaddow to the right side of the editor window, "False" by default
-                              10) text_color ------- accepts values from 0 to 5
-                              11) border_color ----- accepts values from 0 to 5
-                              12) header_color ----- accepts values from 0 to 5
-                              13) shadow_color ----- accepts values from 0 to 5
-                              14) number_color ----- accepts values from 0 to 5
+1) winy ------------- width of the editor window
+2) winx ------------- height of the editor window
+3) ygap ------------- gap between the top of the editor window and the screen border
+4) xgap ------------- gap between the right side of the editor window and the screen border
+5) filename --------- has the value of "None" by default
+6) add_header ------- "False" by default, Pass "True" to add a window header
+7) header_text ------ messenge to be displayed in the header
+8) add_numbers ------ adds numeration, "False" by default
+9) add_shaddow ------ adds shaddow to the right side of the editor window, "False" by default
+10) text_color ------- accepts values from 0 to 5
+11) border_color ----- accepts values from 0 to 5
+12) header_color ----- accepts values from 0 to 5
+13) shadow_color ----- accepts values from 0 to 5
+14) number_color ----- accepts values from 0 to 5
 
  **functionality:**
    The editor supports utf-8 encoding, although I couldn't figure out how to make curses recognize cyrillic characters yet. I'll solve this problem in the near future. There are two ways to move cursor around the screen: arrow keys and Alt + h\j\k\l key combinations. The latter one is bug free, whereas the arrow keys overload the script, because of the keystroke buffering. There are some basic editor features available via Alt key combinations:
